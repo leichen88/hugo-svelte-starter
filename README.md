@@ -4,13 +4,13 @@ This is a template for integrating Svelte 5 projects—specifically for data vis
 
 ## Get started
 
-Clone the git repository to your local system
+Clone the git repository to your local system.
 
 ```
 git clone https://github.com/leichen88/hugo-svelte-starter.git
 ```
 
-Navigate to the svelte folder in new directory
+Navigate to the svelte folder in new directory.
 
 ```
 cd hugo-svelte-starter/svelte
@@ -22,16 +22,16 @@ npm i
 ```
 
 ## Run on dev server
-Back to the root of `hugo-svelte-starter` folder and start the development server
+Back to the root of `hugo-svelte-starter` folder and start the development server.
 ```
 cd ..
 npm run dev
 ```
-Navigate to [localhost:1313/bar-chart](http://localhost:1313/bar-chart) to view the example from the template.
+Navigate to [localhost:1313/my-first-post](http://localhost:1313/my-first-post) to view the example from the template.
 
 ## Building
 
-Compile Svelte projects and build Hugo site
+Compile Svelte projects and build Hugo site.
 ```
 npm run build
 ```
