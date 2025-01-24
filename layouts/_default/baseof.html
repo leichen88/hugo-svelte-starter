@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ if .Params.uses_svelte }}
+    <!-- Include Svelte styles only when required -->
+    {{ if hugo.IsServer }}
+      <!-- During development, styles are handled by Vite -->
+    {{ else }}
+      <link rel="stylesheet" href="/js/svelte-builds/svelte-bundle.css">
+    {{ end }}
+  {{ end }}
+</head>
+<body>
+  {{ block "main" . }}{{ end }}
+
+  {{ if .Params.uses_svelte }}
+    <!-- Load the appropriate Svelte bundle -->
+    {{ if hugo.IsServer }}
+      <!-- Use Vite's development server in dev mode -->
+      <script type="module" src="http://localhost:3000/src/main.js"></script>
+    {{ else }}
+      <!-- Use the prebuilt Svelte bundle in production -->
+      <script type="module" src="/js/svelte-builds/svelte-bundle.js"></script>
+    {{ end }}
+  {{ end }}
+</body>
+</html>
+
+

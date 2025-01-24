@@ -1,0 +1,2 @@
+# hugo-svelte-starter
+ 

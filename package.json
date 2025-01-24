@@ -1,0 +1,15 @@
+{
+    "name": "hugo-site",
+    "scripts": {
+        "dev": "npm run dev:svelte & npm run dev:hugo",
+        "dev:svelte": "npm run dev --prefix svelte",
+        "dev:hugo": "hugo server -M",
+        "build": "npm run build:svelte && npm run build:hugo",
+        "build:svelte": "npm run build --prefix svelte",
+        "build:hugo": "hugo",
+        "clean": "rm -rf public static/js/svelte-builds"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
