@@ -13,7 +13,7 @@ git clone https://github.com/leichen88/hugo-svelte-starter.git
 Navigate to the svelte folder in new directory.
 
 ```
-cd hugo-svelte-starter/svelte
+cd svelte
 ```
 
 Install the dependencies inside of `hugo-svelte-starter/svelte` folder.
